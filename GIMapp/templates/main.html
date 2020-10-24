@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+
+    <link rel="stylesheet" href="{% static 'option2/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <div class = 'header_maintitle'>
+    코로나 지도시각화 서비스
+    </div>
+    <div class = 'header_subtitle'> 
+    COVID19 Geo-Information Service
+    </div>
+</header>
+    <br>
+<div class = "main_box">
+    <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+            <div class="card-header1">
+                <h3 class="my-0 font-weight-normal">전국적인 코로나바이러스 <br> 확진자 추이 한눈에 파악하기</h3>
+            </div>
+
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                <li>2020년 1월부터 6월까지의 전국 코로나 확진자 추이를<br>TimeStamp Map으로
+                    확인이 가능합니다.</li>
+                <li>지역별 확진자가 가장 많이 나온 곳을 HeatMap을 통해 간편히<br>
+                    확인이 가능합니다.</li>
+                </ul>
+                <br>
+                    <button type="button" class="button1">
+                        <a href="{% url 'result2' %}" id="link">C L I C K <br> H E R E</a>
+                    </button>
+                
+            </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+            <div class="card-header2">
+                <h3 class="my-0 font-weight-normal"> 좌표를 활용한 코로나바이러스 <br> 확진자정보 및 감염구역 조회하기</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3 mb-4">
+                <li> 자신이 조회하고자하는 구역의 좌표(위도와 경도)를 입력하여, <br >
+                확진자의 방문정보 및 분포를 Map에서 쉽게 조회가 가능합니다.</li>
+                <li>Map내 마커를 클릭하시면, 해당구역에 대한 확진자 관련 <br> 세부정보도 열람이 가능합니다. </li>
+                </ul>
+                <br>
+                    <button type="button" class="button2">
+                        <a href="{% url 'input' %}" id="link">C L I C K <br> H E R E</a>
+                    </button>
+               
+            </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+            <div class="card-header">
+             
+            </div>
+           
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class = 'pulbic_info_box'>
+       <a href = 'http://ncov.mohw.go.kr/'> <img src = http://gbgs.go.kr/design/health/img/sub05/COVID19.jpg class='public_info_img1' height = "200px" ></a>
+
+    </div>
+</div>
+    <br>
+
+    <footer>
+    소속 : 광주 인공지능사관학교
+    팀명 : MM-UP
+    <br>
+    팀장 : 지영석
+    <br>
+    팀원 : 송현달 / 김상민 / 유병욱
+    <br>
+    이곳의 모든 저작권은 '광주 인공지능사관학교' 및 'MM-UP' 팀에게 있습니다.
+    <br>
+    copyright ⓒ 2020 09 All Rights Reserved
+    </footer>
+    <br>
+</body>
+</html>
